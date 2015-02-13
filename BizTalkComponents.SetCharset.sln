@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizTalkComponents.PipelineComponents.SetCharset", "Src\SetCharset\BizTalkComponents.PipelineComponents.SetCharset.csproj", "{2129D1D1-CCFC-4E87-8444-8DDFA14EDC1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizTalkComponents.PipelineComponents.SetCharset.Tests.UnitTests", "Tests\UnitTests\BizTalkComponents.PipelineComponents.SetCharset.Tests.UnitTests.csproj", "{F4EA9BC9-0D2E-4571-987E-73C09F9A339E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{FBF9E757-42F8-47D0-AD0E-7202710CEF59}"
+	ProjectSection(SolutionItems) = preProject
+		Build\Build.proj = Build\Build.proj
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2129D1D1-CCFC-4E87-8444-8DDFA14EDC1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2129D1D1-CCFC-4E87-8444-8DDFA14EDC1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2129D1D1-CCFC-4E87-8444-8DDFA14EDC1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2129D1D1-CCFC-4E87-8444-8DDFA14EDC1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4EA9BC9-0D2E-4571-987E-73C09F9A339E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4EA9BC9-0D2E-4571-987E-73C09F9A339E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4EA9BC9-0D2E-4571-987E-73C09F9A339E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4EA9BC9-0D2E-4571-987E-73C09F9A339E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
