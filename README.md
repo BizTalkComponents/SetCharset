@@ -1,1 +1,1 @@
-# SetCharset
+[![Build status](https://ci.appveyor.com/api/projects/status/github/BizTalkComponents/SetCharset?branch=master)](https://ci.appveyor.com/api/projects/status/github/BizTalkComponents/SetCharset/branch/master)
