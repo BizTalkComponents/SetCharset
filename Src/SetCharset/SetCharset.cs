@@ -16,7 +16,7 @@ namespace BizTalkComponents.PipelineComponents.SetCharset
                                         IPersistPropertyBag, IComponentUI
     {
         [DisplayName("Target Charset")]
-        [Description("The charset that should be used for the incomming message.")]
+        [Description("The charset that should be used for the incoming message.")]
         [RequiredRuntime]
         public string TargetCharset { get; set; }
         private const string TargetCharsetPropertyName = "TargetCharset";
