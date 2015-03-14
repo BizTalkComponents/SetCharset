@@ -1,5 +1,6 @@
 <Project DefaultTargets="GenerateMsi" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<Import Project="$(MSBuildExtensionsPath)\BtsMsiTask\BtsMsiTask.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\ExtensionPack\4.0\MSBuild.ExtensionPack.tasks"/>
 	<PropertyGroup>
 		<DestinationPath>.</DestinationPath>
 		<ApplicationName>BizTalkComponents.PipelineComponents.SetCharset</ApplicationName>
@@ -7,12 +8,17 @@
 	<ItemGroup>
 		<Resource Include="..\Src\SetCharset\\bin\Debug\BizTalkComponents.PipelineComponents.SetCharset.dll" />
 	</ItemGroup>
-		
-	<Target Name="GenerateMsi">
-		<MsiTask  
-			FileName="$(FileName)"
-			DestinationPath="$(DestinationPath)"
-			ApplicationName="$(ApplicationName)"
-			Resources="@(Resource)" />
+  <Target Name="GetVersion">
+    <MSBuild.ExtensionPack.Framework.Assembly TaskAction="GetInfo" NetAssembly=".\Src\SetCharset\\bin\Debug\BizTalkComponents.PipelineComponents.SetCharset.dll">
+      <Output TaskParameter="OutputItems" ItemName="Info"/>
+    </MSBuild.ExtensionPack.Framework.Assembly>
+  </Target>
+  <Target Name="GenerateMsi" DependsOnTargets="GetVersion">
+    <MsiTask
+        FileName="$(ApplicationName)_%(Info.AssemblyInformationalVersion).msi"
+        DestinationPath="$(DestinationPath)"
+        SourceLocation="C:\%(Info.AssemblyInformationalVersion)"
+        ApplicationName="$(ApplicationName)"
+        Resources="@(Resource)" />
 	</Target>
 </Project>
