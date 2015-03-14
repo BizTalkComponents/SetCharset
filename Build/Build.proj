@@ -6,10 +6,10 @@
 		<ApplicationName>BizTalkComponents.PipelineComponents.SetCharset</ApplicationName>
 	</PropertyGroup>
 	<ItemGroup>
-		<Resource Include="..\Src\SetCharset\\bin\Debug\BizTalkComponents.PipelineComponents.SetCharset.dll" />
+		<Resource Include="..\Src\SetCharset\bin\Debug\BizTalkComponents.PipelineComponents.SetCharset.dll" />
 	</ItemGroup>
   <Target Name="GetVersion">
-    <MSBuild.ExtensionPack.Framework.Assembly TaskAction="GetInfo" NetAssembly=".\Src\SetCharset\\bin\Debug\BizTalkComponents.PipelineComponents.SetCharset.dll">
+    <MSBuild.ExtensionPack.Framework.Assembly TaskAction="GetInfo" NetAssembly="..\Src\SetCharset\bin\Debug\BizTalkComponents.PipelineComponents.SetCharset.dll">
       <Output TaskParameter="OutputItems" ItemName="Info"/>
     </MSBuild.ExtensionPack.Framework.Assembly>
   </Target>
