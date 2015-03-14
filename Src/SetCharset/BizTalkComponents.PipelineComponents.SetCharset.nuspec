@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>BizTalkComponents.PipelineComponents.SetCharset</id>
-    <version>1.0.0.0</version>
+    <version>$version$</version>
     <authors>Robin Hultman</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://github.com/BizTalkComponents/SetCharset</projectUrl>
